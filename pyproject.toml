@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "sagdib"
+version = "0.0.0"
+description = "Python discord bot for Samegaki needs"
+authors = ["Karel Bašta <karel@bastakka.eu>"]
+license = "GPLv3"
+readme = "README.md"
+documentation = "https://github.com/samegaki-eu/SAGDIB"
+keywords = ["Python", "Discord", "Poetry"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+colorama = "^0.4.6"
+pip = "^24.0"
+taskipy = "^1.12.2"
+python-dotenv = {extras = ["cli"], version = "^1.0.1"}
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.1.0"
+yapf = "^0.40.2"
+toml = "^0.10.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.yapf]
+based_on_style = "google"
+indent_width = 2
+spaces_before_comment = 2
+split_before_logical_operator = true
+
+[tool.taskipy.settings]
+runner = "dotenv run"
+
+[tool.taskipy.tasks]
+test = { cmd = "python -m unittest test_*.py", help = "Runs all unit tests"}
+check_formatting = { cmd = "yapf --diff -p -r -vv SAGDIB", help = "Checks if code is linted" }
+
+
