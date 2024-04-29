@@ -38,8 +38,8 @@ split_before_logical_operator = true
 runner = "dotenv run"
 
 [tool.taskipy.tasks]
-test = { cmd = "python -m unittest test_*.py", help = "Runs all unit tests"}
+test = { cmd = "python -m unittest tests/test_*.py", help = "Runs all unit tests"}
 lint = { cmd = "pylint sagdib tests", help = "Lints code using pylint" }
-check_formatting = { cmd = "yapf --diff -p -r -vv SAGDIB", help = "Checks if code is linted" }
+check_formatting = { cmd = "yapf --diff -p -r -vv sagdib tests", help = "Checks if code is linted" }
 
 
