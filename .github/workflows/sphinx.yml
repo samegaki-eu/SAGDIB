@@ -1,4 +1,4 @@
-name: sphinx
+name: Build Documentation
 on: [push]
 
 permissions:
@@ -6,6 +6,9 @@ permissions:
 
 jobs:
   build-deploy:
+    defaults:
+        run:
+          shell: bash
     runs-on: 
       "ubuntu-latest"
     steps:
