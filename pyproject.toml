@@ -23,6 +23,8 @@ python-dotenv = {extras = ["cli"], version = "^1.0.1"}
 pylint = "^3.1.0"
 yapf = "^0.40.2"
 toml = "^0.10.2"
+sphinx = "^7.3.7"
+sphinx-rtd-theme = "^2.0.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -41,5 +43,5 @@ runner = "dotenv run"
 test = { cmd = "python -m unittest tests/test_*.py", help = "Runs all unit tests"}
 lint = { cmd = "pylint sagdib tests", help = "Lints code using pylint" }
 check_formatting = { cmd = "yapf --diff -p -r -vv sagdib tests", help = "Checks if code is linted" }
-
+generate_docs = { cmd = "make -C docs html", help = "Generates documentation" }
 
