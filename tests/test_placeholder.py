@@ -1,7 +1,8 @@
+"""Placeholder testing module"""
 import unittest
 
-
 class TestStringMethods(unittest.TestCase):
+  """Placeholder testing class"""
 
   def test_upper(self):
     self.assertEqual('foo'.upper(), 'FOO')
