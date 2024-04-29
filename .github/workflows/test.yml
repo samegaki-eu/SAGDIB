@@ -72,6 +72,7 @@ jobs:
       run:
         shell: bash
     runs-on: ${{ matrix.os }}
+    needs: lint
     steps:
       #----------------------------------------------
       #       check-out repo and set-up python
