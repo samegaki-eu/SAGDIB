@@ -4,4 +4,4 @@ Testing
 .. toctree::
    :maxdepth: 4
 
-   test_placeholder
+   testing/test_placeholder
