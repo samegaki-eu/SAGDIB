@@ -40,6 +40,7 @@ runner = "dotenv run"
 [tool.taskipy.tasks]
 test = { cmd = "python -m unittest tests/test_*.py", help = "Runs all unit tests"}
 lint = { cmd = "pylint sagdib tests", help = "Lints code using pylint" }
-check_formatting = { cmd = "yapf --diff -p -r -vv sagdib tests", help = "Checks if code is linted" }
+check_formatting = { cmd = "yapf --diff -p -r -vv bot.py sagdib tests", help = "Checks if code is linted" }
+format = { cmd = "yapf -i -p -r bot.py sagdib tests", help = "Formats code using yapf" }
 generate_docs = { cmd = "make -C docs html", help = "Generates documentation" }
-
+run = {cmd = "python bot.py", help = "Runs the bot"}
