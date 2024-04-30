@@ -12,6 +12,7 @@ Welcome to SAGDIB's documentation!
 
    introduction
    installation
+   configuration
    sagdib
    testing
 

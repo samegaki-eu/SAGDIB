@@ -45,6 +45,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../configuration.html">Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../sagdib.html">SAGDIB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../testing.html">Testing</a></li>
 </ul>
@@ -79,25 +80,25 @@
 
 
 <div class="viewcode-block" id="TestStringMethods">
-<a class="viewcode-back" href="../../test_placeholder.html#tests.test_placeholder.TestStringMethods">[docs]</a>
+<a class="viewcode-back" href="../../testing/test_placeholder.html#tests.test_placeholder.TestStringMethods">[docs]</a>
 <span class="k">class</span> <span class="nc">TestStringMethods</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
 <span class="w">  </span><span class="sd">&quot;&quot;&quot;Placeholder testing class&quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="TestStringMethods.test_upper">
-<a class="viewcode-back" href="../../test_placeholder.html#tests.test_placeholder.TestStringMethods.test_upper">[docs]</a>
+<a class="viewcode-back" href="../../testing/test_placeholder.html#tests.test_placeholder.TestStringMethods.test_upper">[docs]</a>
   <span class="k">def</span> <span class="nf">test_upper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="s1">&#39;FOO&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="TestStringMethods.test_isupper">
-<a class="viewcode-back" href="../../test_placeholder.html#tests.test_placeholder.TestStringMethods.test_isupper">[docs]</a>
+<a class="viewcode-back" href="../../testing/test_placeholder.html#tests.test_placeholder.TestStringMethods.test_isupper">[docs]</a>
   <span class="k">def</span> <span class="nf">test_isupper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="s1">&#39;FOO&#39;</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="s1">&#39;Foo&#39;</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span></div>
 
 
 <div class="viewcode-block" id="TestStringMethods.test_split">
-<a class="viewcode-back" href="../../test_placeholder.html#tests.test_placeholder.TestStringMethods.test_split">[docs]</a>
+<a class="viewcode-back" href="../../testing/test_placeholder.html#tests.test_placeholder.TestStringMethods.test_split">[docs]</a>
   <span class="k">def</span> <span class="nf">test_split</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;hello world&#39;</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="s1">&#39;world&#39;</span><span class="p">])</span>
