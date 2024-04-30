@@ -1,6 +1,7 @@
 """Placeholder testing module"""
 import unittest
 
+
 class TestStringMethods(unittest.TestCase):
   """Placeholder testing class"""
 
