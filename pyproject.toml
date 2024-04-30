@@ -6,7 +6,7 @@ authors = ["Karel Bašta <karel@bastakka.eu>"]
 license = "GPLv3"
 readme = "README.md"
 documentation = "https://github.com/samegaki-eu/SAGDIB"
-keywords = ["Python", "Discord", "Poetry"]
+keywords = ["Python", "Discord", "Poetry", "Pycord"]
 package-mode = false
 
 [tool.poetry.dependencies]
