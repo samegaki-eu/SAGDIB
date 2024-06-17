@@ -13,7 +13,7 @@ package-mode = false
 python = "^3.9"
 colorama = "^0.4.6"
 pip = "^24.0"
-taskipy = "^1.12.2"
+taskipy = "^1.13.0"
 python-dotenv = {extras = ["cli"], version = "^1.0.1"}
 py-cord = {extras = ["voice"], version = "^2.5.0"}
 
